@@ -1,0 +1,22 @@
+div{
+    background: powderblue
+}
+header{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aquamarine;
+    size: 10cm;
+    margin: auto;
+    background: olive;
+    padding: 40px;
+    font 
+}
+section{
+    padding: 246px;
+}
+footer{
+    font-family: 'Times New Roman', Times, serif;
+    color: beige;
+    size: 100cm;
+    background: palevioletred;
+    padding: 28px
+}

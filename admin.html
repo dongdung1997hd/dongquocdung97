@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Admin manager</h1>
+        <div class="mb-3">
+            <button class="btn btn-primary" data-toggle="modal" data-target="#addClother">Add</button>
+        </div>
+        <div>
+
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Code</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Size</th>
+                        <th>Color</th>
+                        <th>Brand</th>
+                        <th>action</th>
+                    </tr>
+                </thead>
+                <tbody id="list-clothers">
+                    <tr>
+                        <td>1</td>
+                        <td>CLO1</td>
+                        <td>Quan kaki</td>
+                        <td>200000d</td>
+                        <td>X</td>
+                        <td>Black</td>
+                        <td>Adam</td>
+
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+
+    </div>
+    <!-- The Modal -->
+    <div class="modal fade" id="addClother">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <form id="frmNewClother" onsubmit="addClother(event)">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Modal Heading</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="txtCode">Code:</label>
+                            <input type="text" required class="form-control" placeholder="Enter code" id="txtCode">
+                        
+                        </div>
+                        <div class="form-group">
+                            <label for="txtName">Name:</label>
+                            <input type="text" required class="form-control" placeholder="Enter name" id="txtName">
+                       
+                        </div>
+                        <div class="form-group">
+                            <label for="txtPrice">Price:</label>
+                            <input type="text" required class="form-control" placeholder="Enter price" id="txtPrice">
+                        
+                        </div>
+                        <div class="form-group">
+                            <label for="txtSize">Size:</label>
+                            <input type="text" class="form-control" placeholder="Enter size" id="txtSize">
+                        </div>
+                        <div class="form-group">
+                            <label for="txtColor">Color:</label>
+                            <input type=text" class="form-control" placeholder="Enter color" id="txtColor">
+                        </div>
+                        <div class="form-group">
+                            <label for="txtBrand">Brand:</label>
+                            <input type="text" class="form-control" placeholder="Enter brand" id="txtBrand">
+                        </div>
+                        <div class="form-group">
+                            <label for="txtDes">Desription:</label>
+                            <textarea type="text" class="form-control" placeholder="Enter Desription"
+                                id="txtDes"></textarea>
+                        </div>
+
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-success">Save</button>
+                        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="editClother">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <form id="frmNewClother" onsubmit="addClother(event)">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Modal Heading</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+    
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label for="txtEditCode">Code:</label>
+                                <input type="text" required class="form-control" placeholder="Enter code" id="txtEditCode">
+                            
+                            </div>
+                            <div class="form-group">
+                                <label for="txtEditName">Name:</label>
+                                <input type="text" required class="form-control" placeholder="Enter name" id="txtEditName">
+                           
+                            </div>
+                            <div class="form-group">
+                                <label for="txtEditPrice">Price:</label>
+                                <input type="text" required class="form-control" placeholder="Enter price" id="txtEditPrice">
+                            
+                            </div>
+                            <div class="form-group">
+                                <label for="txtSize">Size:</label>
+                                <input type="text" class="form-control" placeholder="Enter size" id="txtSize">
+                            </div>
+                            <div class="form-group">
+                                <label for="txtColor">Color:</label>
+                                <input type=text" class="form-control" placeholder="Enter color" id="txtColor">
+                            </div>
+                            <div class="form-group">
+                                <label for="txtBrand">Brand:</label>
+                                <input type="text" class="form-control" placeholder="Enter brand" id="txtBrand">
+                            </div>
+                            <div class="form-group">
+                                <label for="txtDes">Desription:</label>
+                                <textarea type="text" class="form-control" placeholder="Enter Desription"
+                                    id="txtDes"></textarea>
+                            </div>
+    
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-success">Save</button>
+                            <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="admin.js"></script>
+
+</body>
+
+</html>
