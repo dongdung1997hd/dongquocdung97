@@ -9,8 +9,14 @@ body {
 }
 #menu {
     width: 1000px;
-    background: #fff;
     height: 200px;
+}
+#menu ul {
+    color: #4f5f69;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 0 16px;
+    margin: 0; 
 }
 #main #left {
     width: 700px;
@@ -25,12 +31,9 @@ body {
 }
 #footer {
     width: 1000px;
-    background: #000;
-    text-align: center;
-    height: 60px;
-    color: blanchedalmond;
-    clear: left;
-    line-height: 60px;
+   height: 60px;
+   background: #212121;
+   line-height: 60px;
 }
 #menu ul {
     margin: 0px;
@@ -52,6 +55,7 @@ body {
 #main #left ul {
     margin: 0px;
     padding: 0px;
+    padding-right: 38px;
 }
 #main #left ul li {
     list-style: none;
@@ -64,6 +68,8 @@ body {
     float: left;
     margin-right: 10px;
     margin-bottom: 20px;
+    width: 260px;
+    height: 160px;
 }
 #main #left ul li h2 {
     font-size: 16px;
@@ -75,6 +81,10 @@ body {
 #main #right .menu-right ul {
     margin: 0px;
     padding: 0px;
+    margin-bottom: 50px;
+}
+.menu-right {
+    margin-bottom: 50px;
 }
 #main #right .menu-right ul li {
     list-style: none;
@@ -85,13 +95,20 @@ body {
     display: block;
     text-decoration: none;
     line-height: 32px;
-    border-bottom: 1px solid #ccc;
 }
+#main #right h2 {
+    font-size: 20px;
+}
+
 #main #right h3 {
     height: 40px;
     margin-top: 0px;
     text-align: center;
     font-size: 14px;
+}
+#main #right ul h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
 }
 #main #right .menu-right h3 ul li img {
     float: left;
@@ -161,18 +178,74 @@ body {
     position: absolute;
     top: 20px;
     right: 25px;
-    /* bottom: 0; */
-    /* left: 0; */
 }
 
 .jeg_search_button {
     color: #888;
     position: absolute;
     top: -7px;
-    /* bottom: -10px; */
-    /* right: 20px; */
 }
-#footer {
-    width: 1000px;
-    padding: 60px 0px 40px;
+
+.product-img {
+    width: 120px;
+    height: 100px;
+    margin-bottom: 10px;
 }
+.product-row {
+    display: flex;
+    border-bottom: none !important;
+}
+.product-row h3 {
+    padding-left: 20px;
+    text-align: left !important;
+    font-weight: bold;
+}
+.clear-float {
+    clear: both;
+}
+.gotobtn {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 40px;
+    background: #4f5f69;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: #53585c;
+    font-size: 20px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 300px;
+}
+
+#footer .jeg_footer_primary {
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+}
+
+.col_footer-clumn ul {
+    list-style: none;
+    float: left;
+}
+
+#footer .col_footer-clumn ul li {
+    text-decoration: none;
+    display: block;
+    color: #a8a8aa;
+    padding: 6px 0;
+    line-height: 20px;
+}
+
+
+
+
+
+
+
+  
