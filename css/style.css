@@ -52,6 +52,7 @@ body {
 #main #left ul {
     margin: 0px;
     padding: 0px;
+    padding-right: 38px;
 }
 #main #left ul li {
     list-style: none;
@@ -75,6 +76,7 @@ body {
 #main #right .menu-right ul {
     margin: 0px;
     padding: 0px;
+    margin-bottom: 50px;
 }
 #main #right .menu-right ul li {
     list-style: none;

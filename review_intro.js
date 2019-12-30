@@ -6,4 +6,4 @@ a.addEventListener('click', function () {
     } else {
         document.getElementById('search-form-top').style.display = 'none';
     }
-}); 
+});
