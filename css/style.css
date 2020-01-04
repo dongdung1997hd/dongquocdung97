@@ -1,17 +1,19 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 13px;
-    width: 1000px;
+    width: 100%;
     margin: 0px auto;
+
 }
 #header {
     text-align: center;
+    margin-bottom: 80px;
 }
-#menu {
-    width: 1000px;
-    height: 200px;
+#header .row {
+    margin-bottom: 20px;
 }
-#menu ul {
+
+#menu  ul {
     color: #4f5f69;
     text-transform: uppercase;
     font-size: 15px;
@@ -30,27 +32,7 @@ body {
     min-height: 400px;
 }
 #footer {
-    width: 1000px;
-   height: 60px;
-   background: #212121;
    line-height: 60px;
-}
-#menu ul {
-    margin: 0px;
-    padding: 0px;
-    display: inline-block;
-}
-#menu ul li {
-    list-style: none;
-    float: left;
-}
-#menu ul li a {
-    text-decoration: none;
-    display: block;
-    height: 40px;
-    line-height: 40px;
-    color: #ccc;
-    padding: 0px 20px 20px 0px
 }
 #main #left ul {
     margin: 0px;
@@ -117,10 +99,6 @@ body {
     width: 100%;
 }
 
-.nav-row_left .nav-row_item {
-    float: left;
-}
-
 .nav-row_left .nav-row_item i {
     width: 20px;
     border-radius: 100%;
@@ -159,10 +137,6 @@ body {
 }
 .nav-row_left .nav-row_item i.fa-youtobe:hover {
     opacity: .8;
-}
-
-.nav-row_right {
-    float: right;
 }
 
 .nav-row_right .search:hover {
@@ -205,16 +179,18 @@ body {
 }
 .gotobtn {
     position: fixed;
-    width: 50px;
-    height: 50px;
-    bottom: 40px;
+    width: 46px;
+    height: 46px;
+    bottom: 30px;
     background: #4f5f69;
     right: 50px;
     text-decoration: none;
     text-align: center;
-    line-height: 50px;
-    color: #53585c;
-    font-size: 20px;
+    line-height: 44px;
+    font-size: 25px;
+}
+.gotobtn i {
+    color: #ccc;
 }
 
 .sticky {
@@ -223,15 +199,14 @@ body {
     width: 300px;
 }
 
-#footer .jeg_footer_primary {
-    margin: 0px;
-    padding: 0px;
-    display: inline-block;
+.col_footer-clumn {
+    float: left;
+    margin-right: 220px;
 }
 
 .col_footer-clumn ul {
     list-style: none;
-    float: left;
+    padding: 0;
 }
 
 #footer .col_footer-clumn ul li {
@@ -240,6 +215,61 @@ body {
     color: #a8a8aa;
     padding: 6px 0;
     line-height: 20px;
+}
+
+.col_footer-clumn .nav-row_item_clumn i {
+    width: 38px;
+    height: 36px;
+    border-radius: 100%;
+    line-height: 20px;
+}
+.col_footer-clumn .nav-row_item_clumn i a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.col_footer-clumn.nav-row_item_clumn i.fa-facebook {
+    background: #45629f;
+}
+
+.col_footer-clumn.nav-row_item_clumn i.fa-facebook:hover {
+    opacity: .8;
+}
+
+.col_footer-clumn.nav-row_item_clumn i.fa-twitter {
+    background: #5eb2ef;
+}
+.col_footer-clumn.nav-row_item_clumn i.fa-twitter:hover {
+    opacity: .8;
+}
+.col_footer-clumn.nav-row_item_clumn i.fa-instagram {
+    background: #125d8f;
+}
+.col_footer-clumn.nav-row_item_clumn i.fa-instagram:hover {
+    opacity: .8;
+}
+.col_footer-clumn.nav-row_item_clumn i.fa-pinterest {
+    background: #e02647;
+}
+.col_footer-clumn.nav-row_item_clumn i.fa-pinterest:hover {
+    opacity: .8;
+}
+.col_footer-clumn.nav-row_item_clumn i.fa-youtobe {
+    background: #c61d23;
+}
+.col_footer-clumn.nav-row_item_clumn i.fa-youtobe:hover {
+    opacity: .8;
+}
+.col_footer-clumn.nav-row_item_clumn i.fa-rss {
+    background: #f70d28;;
+}
+.col_footer-clumn.nav-row_item_clumn i.fa-rss:hover {
+    opacity: .8;
+}
+
+.nav-row_item_clumn {
+    float: right;
+    font-size: 20px;
 }
 
 
