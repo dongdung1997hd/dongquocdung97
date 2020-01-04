@@ -22,7 +22,7 @@ for (let i = 0; i < listPost.length; i++) {
     const element = listPost[i];
     s += ` 
     <div>
-        <img src="images/${element.imageURLContent}" />
+        <img src="images/${element.imageURLContent}" width="100%"/>
   
    </div>  
     `
