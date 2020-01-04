@@ -4,7 +4,8 @@ function reviewPost() {
     return {
         'title': '',
         'headline': '',
-        'imageURL': '',
+        'imageURLHeadline': '',
+        'imageURLContent': '',
         'code': '',
         'content': '',
         'date': (new Date()).toLocaleDateString('en-US'),
@@ -15,10 +16,11 @@ function reviewPost() {
 
 let posts = [];
 let post1 = reviewPost();
-post1.title = "Đánh giá chi tiết điện thoại";
+post1.title = "Đánh giá chi tiết Samsung Galaxy S10e: Nhỏ nhưng tinh thông võ nghệ!";
 post1.headline = "Cũng từ rất lâu rồi, sau cuộc chạy đua về cấu hình và kích thước màn hình, một chiếc smartphone nhỏ gọn nhưng hội tụ đủ những công nghệ đỉnh cao mới xuất hiện. Đó chính là Samsung Galaxy S10e.";
 post1.content = "Cũng từ rất lâu rồi, sau cuộc chạy đua về cấu hình và kích thước màn hình, một chiếc smartphone nhỏ gọn nhưng hội tụ đủ những công nghệ đỉnh cao mới xuất hiện. Đó chính là Samsung Galaxy S10e.";
-post1.imageURL = "iPhoneXR.jpg";
+post1.imageURLHeadline = "S10e.jpg";
+post1.imageURLContent = "S10eBig.jpg";
 post1.code = "P1";
 posts.push(post1);
 
@@ -38,7 +40,8 @@ function displayListPost(listPost) {
                 <td>${post.code}</td>
                 <td>${post.date}</td>
                 <td>${post.title}</td>
-                <td>${post.imageURL}</td>
+                <td>${post.imageURLHeadline}</td>
+                <td>${post.imageURLContent}<td>
                 <td>${cutContent(post.headline)}</td>
                 <td>${cutContent(post.content)}</td>
 
@@ -73,9 +76,9 @@ function addPost(e) {
     let newPost = reviewPost();
 
     newPost.code = document.getElementById("postCode").value;
-    // newPost.date = document.getElementById("postDate").value;
     newPost.title = document.getElementById("postTitle").value;
-    newPost.imageURL = document.getElementById("postImage").value;
+    newPost.imageURLHeadline = document.getElementById("postImage").value;
+    newPost.imageURLContent = document.getElementById("postImageContent").value;
     newPost.headline = document.getElementById("postHeadline").value;
     newPost.content = document.getElementById("postContent").value;
 
@@ -104,9 +107,9 @@ function editPost(code) {
     }
 
     document.getElementById('postEditCode').value = currentPost.code;
-    // document.getElementById('postEditDate').value = currentPost.date;
     document.getElementById('postEditTitle').value = currentPost.title;
-    document.getElementById('postEditImage').value = currentPost.imageURL;
+    document.getElementById('postEditImage').value = currentPost.imageURLHeadline;
+    document.getElementById('postEditImageContent').value = currentPost.imageURLContent;
     document.getElementById('postEditHeadline').value = currentPost.headline;
     document.getElementById('postEditContent').value = currentPost.content;
 
@@ -121,9 +124,9 @@ function savePost(e) {
         let code = document.getElementById("postEditCode").value;
 
         if (post.code === code) {
-            // post.date = document.getElementById("postEditDate").value;
             post.title = document.getElementById("postEditTitle").value;
-            post.imageURL = document.getElementById("postEditImage").value;
+            post.imageURLHeadline = document.getElementById("postEditImage").value;
+            post.imageURLContent = document.getElementById("postEditImageContent").value;
             post.headline = document.getElementById("postEditHeadline").value;
             post.content = document.getElementById("postEditContent").value;
 

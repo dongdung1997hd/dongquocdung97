@@ -44,3 +44,7 @@
     margin: auto;
     background: rgb(119, 96, 245);
 }
+
+#wrapper #left #container #image{
+    width: 2px;
+}

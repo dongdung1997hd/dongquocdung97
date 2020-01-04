@@ -20,13 +20,11 @@ let s = '';
 
 for (let i = 0; i < listPost.length; i++) {
     const element = listPost[i];
-    s += `
-    
+    s += ` 
     <div>
-        <img src="images/${element.imageURL}" />
+        <img src="images/${element.imageURLContent}" />
   
-   </div>
-    
+   </div>  
     `
 }
 
