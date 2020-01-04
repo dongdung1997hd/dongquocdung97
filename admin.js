@@ -18,7 +18,7 @@ let posts = [];
 let post1 = reviewPost();
 post1.title = "Đánh giá chi tiết Samsung Galaxy S10e: Nhỏ nhưng tinh thông võ nghệ!";
 post1.headline = "Cũng từ rất lâu rồi, sau cuộc chạy đua về cấu hình và kích thước màn hình, một chiếc smartphone nhỏ gọn nhưng hội tụ đủ những công nghệ đỉnh cao mới xuất hiện. Đó chính là Samsung Galaxy S10e.";
-post1.content = "Cũng từ rất lâu rồi, sau cuộc chạy đua về cấu hình và kích thước màn hình, một chiếc smartphone nhỏ gọn nhưng hội tụ đủ những công nghệ đỉnh cao mới xuất hiện. Đó chính là Samsung Galaxy S10e.";
+post1.content = "Chiến lược kinh doanh của Samsung trong năm thứ 10 phát triển dòng smartphone Galaxy thật đặc biệt. Không chỉ có 2 biến thể Galaxy S10, Samsung còn bổ sung thêm một thiết bị nhỏ gọn hơn, mang trong mình những công nghệ tốt nhất nhằm phục vụ cho nhu cầu ngày càng đa dạng của người dùng. Không phải ai cũng có bàn tay đủ lớn để cầm chiếc Galaxy S10+ hay không phải ai cũng có đủ tiền để sở hữu Galaxy S10, đáp ứng được cả hai thắc đó, Samsung đã đưa ra Galaxy S10e – siêu phẩm nhỏ gọn giữa những gã khổng lồ của phân khúc cao cấp. Sau 10 ngày trải nghiệm, người viết cần phải khẳng định Galaxy S10e là smartphone cao cấp đáng mua nhất hiện nay và bạn sẽ trải nghiệm được sự khác biệt ngay trong lòng bàn tay.";
 post1.imageURLHeadline = "S10e.jpg";
 post1.imageURLContent = "S10eBig.jpg";
 post1.code = "P1";
@@ -41,7 +41,7 @@ function displayListPost(listPost) {
                 <td>${post.date}</td>
                 <td>${post.title}</td>
                 <td>${post.imageURLHeadline}</td>
-                <td>${post.imageURLContent}<td>
+                <td>${post.imageURLContent}</td>
                 <td>${cutContent(post.headline)}</td>
                 <td>${cutContent(post.content)}</td>
 

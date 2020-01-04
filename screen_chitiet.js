@@ -13,7 +13,7 @@ for (let i = 0; i < listPost.length; i++) {
 
 document.getElementById('title').innerHTML = post.title;
 document.getElementById('content').innerHTML = post.content;
-document.getElementById('date').innerHTML = `bởi Admin ngày ${post.date}`;
+document.getElementById('date').innerHTML = `Đăng bởi Admin ngày ${post.date}`;
 
 
 let s = '';
