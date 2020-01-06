@@ -1,3 +1,5 @@
+// Get post content
+
 let listPost = JSON.parse(localStorage.getItem("listPost"));
 
 let selectedPost = localStorage.getItem("selectedPost");
@@ -14,20 +16,16 @@ for (let i = 0; i < listPost.length; i++) {
 document.getElementById('title').innerHTML = post.title;
 document.getElementById('content').innerHTML = post.content;
 document.getElementById('date').innerHTML = `Đăng bởi Admin ngày ${post.date}`;
+document.getElementById('image').innerHTML = ` 
+<div>
+    <img src="images/${post.imageURLContent}" width="100%"/>
+
+</div>  
+`;
 
 
-let s = '';
 
-for (let i = 0; i < listPost.length; i++) {
-    const element = listPost[i];
-    s += ` 
-    <div>
-        <img src="images/${element.imageURLContent}" width="100%"/>
-  
-   </div>  
-    `
-}
 
-document.getElementById('image').innerHTML = s;
+
 
 

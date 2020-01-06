@@ -18,7 +18,7 @@
 }
 
 #right{
-    float: left;
+    float: right;
     width: 250px;
     border: 1px solid whitesmoke;
 }
@@ -38,10 +38,10 @@
     padding: 2px;
     float: left;
 }
-#bottom{
+/* #bottom{
     height: 180px;
-    width: 1000px;
+    width: 750px;
     margin: auto;
     background: rgb(119, 96, 245);
-}
+} */
 

@@ -30,7 +30,7 @@ for (let i = 0; i < listPost.length; i++) {
                     </li>
                 </ul>
     
-    `
+    `;
 }
 
 document.getElementById('left').innerHTML = s;
