@@ -27,13 +27,16 @@
 
                 <thead>
                     <tr>
+                        <th>Action</th>
                         <th>STT</th>
                         <th>Code</th>
                         <th>Posted Date</th>
                         <th>Title</th>
-                        <th>Image Name</th>
+                        <th>Image Headline</th>
+                        <th>Image Content</th>
                         <th>Headline</th>
                         <th>Content</th>
+                        <th>User Feedback</th>
 
                     </tr>
                 </thead>
@@ -81,12 +84,16 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="postImageName">Add Image</label>
+                            <label for="postImage">Add Image Headline</label>
                             <input type="text" required class="form-control" placeholder="Enter Image Name" id="postImage">
-                            
-               
                                 
                         </div>
+
+                        <div class="form-group">
+                                <label for="postImageContent">Add Image Content</label>
+                                <input type="text" required class="form-control" placeholder="Enter Image Name" id="postImageContent">
+                                    
+                            </div>
 
                         <div class="form-group">
                             <label for="postContent">Add Post Headline</label>
@@ -142,9 +149,15 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="postEditImage">Edit Image</label>
+                            <label for="postEditImage">Edit Image Headline</label>
                             <input type="text" class="form-control" placeholder="Enter Image Name"
                                 id="postEditImage">
+
+                        </div>
+                        <div class="form-group">
+                            <label for="postEditImageContent">Edit Image Content</label>
+                            <input type="text" class="form-control" placeholder="Enter Image Name"
+                                id="postEditImageContent">
 
                         </div>
 
@@ -183,6 +196,7 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="comment.js"></script>
     <script src="admin.js"></script>
 </body>
 

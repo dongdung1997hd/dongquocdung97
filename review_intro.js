@@ -13,13 +13,13 @@ for (let i = 0; i < listPost.length; i++) {
     
     <ul>
                     <li>
-                        <img src="images/${element.imageURL}" />
+                        <img src="images/${element.imageURLHeadline}" />
                         <a href="#" onclick="goToPostDetail('${element.title}')"><h2>${element.title}</h2></a>
                         ${element.headline}
                     </li>
                 </ul>
     
-    `
+    `;
 }
 
 document.getElementById('left').innerHTML = s;
