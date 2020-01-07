@@ -5,6 +5,9 @@ body {
     margin: 0px auto;
     padding: 0px;
 }
+a {
+    color: #4f5f69;
+}
 .site-title {
     flex: auto;
 }
@@ -108,7 +111,7 @@ body {
     border-radius: 100%;
     line-height: 20px;
     color: white;
-    padding-left: 6px;
+    text-align: center;
 }
 .nav-top i.fa-facebook {
     background: #45629f;
@@ -205,13 +208,12 @@ body {
 
 .col_footer-clumn {
     font-weight: 700;
-    font-size: 16px;
+    font-size: 12px;
 }
 
 .col_footer-clumn ul {
     text-transform: capitalize;
-    font-weight: 700;
-    display: inline-block;
+    margin-top: 20px;
 }
 
 #footer .col_footer-clumn ul li {
@@ -229,11 +231,6 @@ body {
     line-height: 20px;
     
 }
-.col_footer-clumn .nav-row_item i a {
-    display: inline-block;
-    text-decoration: none;
-}
-
 .col_footer-clumn.nav-row_item i.fa-facebook {
     background: #45629f;
 }
@@ -290,13 +287,24 @@ body {
 }
 
 .header-top {
-    border-bottom: 1px solid #6c757d;
+    border-bottom: 1px solid #e0e0e0;
     margin-bottom: 10px;
     padding-bottom: 5px;
 }
 
+#footer ul.categories {
+    padding: 0;
+    list-style-type: disc;
+}
 
+#footer ul.categories li {
+    width: 40%;
+    float: left;
+}
 
-
-
-  
+#footer ul.follow {
+    padding: 0;
+}
+.col-12 {
+   border-top: 1px solid #e0e0e0;
+}
