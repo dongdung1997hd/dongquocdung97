@@ -24,6 +24,8 @@ posts.push(post1);
 
 
 
+
+
 function displayListPost(listPost) {
     let body = document.getElementById("list-content");
 
