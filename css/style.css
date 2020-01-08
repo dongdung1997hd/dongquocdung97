@@ -168,8 +168,8 @@ a {
 }
 
 .product-img {
-    width: 120px;
-    height: 100px;
+    width: 100px;
+    height: 80px;
     margin-bottom: 10px;
 }
 .product-row {
@@ -178,6 +178,14 @@ a {
 }
 .product-row h3 {
     padding-left: 20px;
+    text-align: left !important;
+    font-weight: bold;
+}
+
+.visitor {
+    border-bottom: none !important;
+}
+.visitor h3 {
     text-align: left !important;
     font-weight: bold;
 }

@@ -1,20 +1,16 @@
 /* Thong nhat cach hien thi pixel giua cac trinh duyet */
-*{
+/*{
     padding: 0px;
     margin: 0px;
-}
+}*/
 
-html, 
-body{
-    height: 100%;
-}
-
+/*
 #wrapper{
     min-height: 100%;
     width: 1000px;
     margin: auto;
     background: white;
-}
+}*/
 
 #left{
     float: left;
@@ -22,6 +18,7 @@ body{
     border: 1px solid whitesmoke;
 }
 
+/*
 #right{
     float: right;
     width: 250px;
@@ -43,6 +40,7 @@ body{
     padding: 2px;
     float: left;
 }
+*/
 /* #bottom{
     height: 180px;
     width: 750px;
@@ -79,6 +77,7 @@ body{
     list-style: none;
 }
 
+/*
 .footer{
     background: rgb(15, 15, 15);
     color: lavenderblush;
@@ -108,4 +107,4 @@ body{
     position: absolute;
     bottom: 0px;
     padding-top: 20px;
-} 
+} */

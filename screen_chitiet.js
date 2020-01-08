@@ -15,14 +15,91 @@ for (let i = 0; i < listPost.length; i++) {
 
 document.getElementById('title').innerHTML = post.title;
 document.getElementById('content').innerHTML = post.content;
-document.getElementById('date').innerHTML = `Đăng bởi Admin ngày ${post.date}`;
-document.getElementById('image').innerHTML = ` 
+document.getElementById('date').innerHTML = `By Admin - ${post.date}`;
+document.getElementById('thietke').innerHTML = post.thietke;
+document.getElementById('hieunang').innerHTML = post.hieunang;
+document.getElementById('thoiluongpin').innerHTML = post.thoiluongpin;
+document.getElementById('video').innerHTML = post.video;
+document.getElementById('loiket').innerHTML = post.loiket;
+document.getElementById('author').innerHTML = post.author;
+document.getElementById('imageURLContent').innerHTML = ` 
 <div>
-    <img src="images/${post.imageURLContent}" width="100%"/>
+    <img src="${post.imageURLContent}" width="100%"/>
+
+</div>  
+`;
+document.getElementById('imageURLcauhinh').innerHTML = ` 
+<div>
+    <img src="${post.imageURLcauhinh}" width="100%"/>
+
+</div>  
+`;
+document.getElementById('imageURLContent2').innerHTML = ` 
+<div>
+    <img src="${post.imageURLContent2}" width="100%"/>
+
+</div>  
+`;
+document.getElementById('imageURLthietke').innerHTML = ` 
+<div>
+    <img src="${post.imageURLthietke}" width="100%"/>
+
+</div>  
+`;
+document.getElementById('imageURLContent3').innerHTML = ` 
+<div>
+    <img src="${post.imageURLContent3}" width="100%"/>
+
+</div>  
+`;
+document.getElementById('imageURLhieunang').innerHTML = ` 
+<div>
+    <img src="${post.imageURLhieunang}" width="100%"/>
+
+</div>  
+`;
+document.getElementById('imageURLContent4').innerHTML = ` 
+<div>
+    <img src="${post.imageURLContent4}" width="100%"/>
+
+</div>  
+`;
+document.getElementById('imageURLthoiluongpin').innerHTML = ` 
+<div>
+    <img src="${post.imageURLthoiluongpin}" width="100%"/>
+
+</div>  
+`;
+document.getElementById('imageURLthoiluongpin').innerHTML = ` 
+<div>
+    <img src="${post.imageURLthoiluongpin}" width="100%"/>
 
 </div>  
 `;
 
+// Bai viet moi nhat
+
+let s2 = '';
+
+for (let i = listPost.length -1 ; i >= 0; i--) {
+  const element = listPost[i];
+
+  if (i >= listPost.length - 2){
+  s2 += `
+  
+  <ul>
+      <li class="product-row">
+          </a>
+          <img class="product-img" src="${element.imageURLHeadline}" />
+          <a href="#" onclick="goToPostDetail('${element.title}')"><h3>${element.title}</h3></a>
+      </li>
+  </ul>
+  
+  `;
+  }
+}
+
+document.getElementById('menu-right-top').innerHTML = s2;
 
 function setObject(key, value) {
   window.localStorage.setItem(key, JSON.stringify(value));

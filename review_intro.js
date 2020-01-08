@@ -1,9 +1,8 @@
-
 // Get data from local Storage
 
 let listPost = JSON.parse(localStorage.getItem("listPost"));
 
-// Display on HTML file
+// Main left
 
 let s = '';
 
@@ -12,17 +11,42 @@ for (let i = 0; i < listPost.length; i++) {
     s += `
     
     <ul>
-                    <li>
-                        <img src="images/${element.imageURLHeadline}" />
-                        <a href="#" onclick="goToPostDetail('${element.title}')"><h2>${element.title}</h2></a>
-                        ${element.headline}
-                    </li>
-                </ul>
+        <li>
+            <img src="${element.imageURLHeadline}" />
+            <a href="#" onclick="goToPostDetail('${element.title}')"><h2>${element.title}</h2></a>
+            ${element.headline}
+        </li>
+    </ul>
     
     `;
 }
 
 document.getElementById('left').innerHTML = s;
+
+// Bai viet moi nhat o main right top
+
+
+let s2 = '';
+
+for (let i = listPost.length -1 ; i >= 0; i--) {
+    const element = listPost[i];
+
+    if (i >= listPost.length - 2){
+    s2 += `
+    
+    <ul>
+        <li class="product-row">
+            </a>
+            <img class="product-img" src="${element.imageURLHeadline}" />
+            <a href="#" onclick="goToPostDetail('${element.title}')"><h3>${element.title}</h3></a>
+        </li>
+    </ul>
+    
+    `;
+    }
+}
+
+document.getElementById('menu-right-top').innerHTML = s2;
 
 // Click on title, jump to post detail 
 
