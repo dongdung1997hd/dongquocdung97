@@ -1,14 +1,3 @@
-// Search tool bar của Dũng
-
-var a = document.getElementById('icon-search');
-
-a.addEventListener('click', function () {
-    if (document.getElementById('search-form-top').style.display == 'none' || document.getElementById('search-form-top').style.display == '') {
-        document.getElementById('search-form-top').style.display = 'block';
-    } else {
-        document.getElementById('search-form-top').style.display = 'none';
-    }
-});
 
 // Get data from local Storage
 
@@ -42,15 +31,15 @@ function goToPostDetail(title) {
     window.location.href = "screen_chitiet.html";
 }
 
-window.onscroll = function() {myFunction()};
+// window.onscroll = function() {myFunction()};
 
-var relative = document.getElementById("relative");
-var sticky = relative.offsetTop;
+// var relative = document.getElementById("relative");
+// var sticky = relative.offsetTop;
 
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    relative.classList.add("sticky")
-  } else {
-    relative.classList.remove("sticky");
-  }
-}
+// function myFunction() {
+//   if (window.pageYOffset >= sticky) {
+//     relative.classList.add("sticky")
+//   } else {
+//     relative.classList.remove("sticky");
+//   }
+// }
