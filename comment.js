@@ -21,6 +21,7 @@ comment3.userComment = "Test Comment 3";
 comments.push(comment3);
 
 
+
 // Add comment
 
 function addComment(e) {
