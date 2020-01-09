@@ -5,13 +5,13 @@ let searchKey = localStorage.getItem("searchKey");
 
 let listPost = JSON.parse(localStorage.getItem("listPost"));
 
+// Hien thi ket qua tim kiem
+
 if (searchList.length > 0) {
 
 let s1 = `<h3>Kết quả tìm kiếm cho "${searchKey}"</h3>`;
 
 document.getElementById('left-top').innerHTML = s1;
-
-// Ket qua tim kiem
 
 let s = '';
 
@@ -73,7 +73,6 @@ document.getElementById('menu-right-top').innerHTML = s2;
 function searchPhone(e) {
 
     e.preventDefault();
-
 
     let s3 = [];
 

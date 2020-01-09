@@ -49,7 +49,7 @@ post1.imageURLContent4 = "https://cdn.tgdd.vn/Files/2019/03/08/1153563/6_800x450
 post1.thoiluongpin = "Điện thoại được trang bị pin dung lượng 3.100 mAh, khá lớn khi so với kích thước nhỏ gọn của Galaxy S10e. Máy có thể sẽ bị nóng khi thực hiện nhiều tác vụ cùng lúc.";
 post1.imageURLthoiluongpin = "https://cdn.tgdd.vn/Files/2019/03/08/1153563/7_800x450.jpg";
 post1.imageURLContent5 = "https://cdn.tgdd.vn/Files/2019/03/08/1153563/3_800x450.jpg";
-post1.video = `<iframe width="560" height="315" src="https://www.youtube.com/embed/NAa9J7hexo0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+post1.video = "https://www.youtube.com/watch?v=NAa9J7hexo0&t=2m57s";
 post1.loiket = "Samsung Galaxy S10e không chỉ là flagship giá rẻ mà điện thoại còn phù hợp với nhu cầu của những đối tượng người dùng khác nhau. Mặc dù Galaxy S10e đang được so sánh rất nhiều với iPhone XR nhưng sự thực thì tiềm năng của điện thoại còn lớn hơn vậy.";
 post1.author = "HDH TEAM";
 posts.push(post1);
@@ -76,7 +76,7 @@ post2.imageURLContent4 = "https://cellphones.com.vn/sforum/wp-content/uploads/20
 post2.thoiluongpin = "Thời lượng pin của iPhone XR tốt hơn iPhone X kha khá. Trong trường hợp sử dụng của mình với cường độ sử dụng như nhau, thì từ sáng đến tối đi làm về X còn khoảng 20% và XR còn khoảng 40%. Chi tiết onscreen như thế nào thì các bạn đón xem bài đánh giá pin của Tinh Tế nhé.";
 post2.imageURLthoiluongpin = "https://photo2.tinhte.vn/data/attachment-files/2018/11/4484306_Cover.jpg";
 post2.imageURLContent5 = "https://photo2.tinhte.vn/data/attachment-files/2019/07/4706177_646480B0-3BC4-4EAC-87C9-FCDD4C6D908D.jpeg";
-post2.video = `<iframe width="560" height="315" src="https://www.youtube.com/embed/RMWGJgFCqK0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+post2.video = "https://www.youtube.com/watch?v=RMWGJgFCqK0";
 post2.loiket = "iPhone XR sẽ được Apple phân phối chính hãng tại thị trường Việt Nam kể từ ngày 2/11 tới đây với đầy đủ các tùy chọn màu sắc bao gồm cả phiên bản màu đặc biệt Product RED. Mức giá cụ thể cho phiên bản mã VN/A sẽ là 22.990.000 đồng. Người dùng ngay bây giờ đã có thể đặt trước máy tại CellphoneS để nhận được các phần quà hấp dẫn như đế sạc không dây Anker 10W, gói bảo hành 2 năm và cơ hội trả góp lãi suất 0%. Chi tiết về sản phẩm iPhone XR bạn đọc có thể truy cập tại đường dẫn dưới đây.";
 post2.author = "HDH TEAM";
 posts.push(post2);
@@ -84,12 +84,9 @@ posts.push(post2);
 
 function displayListPost(listPost) {
 
-
-
     let body = document.getElementById("list-content");
 
     let s = '';
-
 
     for (let i = 0; i < listPost.length; i++) {
 
@@ -99,31 +96,31 @@ function displayListPost(listPost) {
             <tr>
 
             <td>
-            <button class="btn btn-success" onclick="editPost('${post.code}');" data-toggle="modal" data-target="#editPost">Edit</button>
-            <button class="btn btn-warning" onclick="deletePost('${post.code}');">Delete</button>
+            <button class="btn btn-info" onclick="editPost('${post.code}');" data-toggle="modal" data-target="#editPost">Edit</button>
+            <button class="btn btn-danger" onclick="deletePost('${post.code}');">Delete</button>
             </td>
             
                 <td>${i+1}</td>
                 <td>${post.code}</td>
                 <td>${post.date}</td>
                 <td>${post.title}</td>
-                <td>${post.imageURLHeadline}</td>
-                <td>${post.imageURLContent}</td>
+                <td>${cutContent2(post.imageURLHeadline)}</td>
+                <td>${cutContent2(post.imageURLContent)}</td>
                 <td>${cutContent(post.headline)}</td>
                 <td>${cutContent(post.content)}</td>
                 <td>${cutContent(post.cauhinh)}</td>
-                <td>${post.imageURLcauhinh}</td>
-                <td>${post.imageURLContent2}</td>
+                <td>${cutContent2(post.imageURLcauhinh)}</td>
+                <td>${cutContent2(post.imageURLContent2)}</td>
                 <td>${cutContent(post.thietke)}</td>
-                <td>${post.imageURLthietke}</td>
-                <td>${post.imageURLContent3}</td>
+                <td>${cutContent2(post.imageURLthietke)}</td>
+                <td>${cutContent2(post.imageURLContent3)}</td>
                 <td>${cutContent(post.hieunang)}</td>
-                <td>${post.imageURLhieunang}</td>
-                <td>${post.imageURLContent4}</td>
+                <td>${cutContent2(post.imageURLhieunang)}</td>
+                <td>${cutContent2(post.imageURLContent4)}</td>
                 <td>${cutContent(post.thoiluongpin)}</td>
-                <td>${post.imageURLthoiluongpin}</td>
-                <td>${post.imageURLContent5}</td>
-                <td>${post.video}</td>
+                <td>${cutContent2(post.imageURLthoiluongpin)}</td>
+                <td>${cutContent2(post.imageURLContent5)}</td>
+                <td>${cutContent2(post.video)}</td>
                 <td>${cutContent(post.loiket)}</td>
                 <td>${post.author}</td>
                
@@ -140,12 +137,19 @@ function displayListPost(listPost) {
 displayListPost(posts);
 
 function cutContent(content) {
-    if (content.length > 20) {
-        return content.substring(0, 20) + "...";
+    if (content.length > 30) {
+        return content.substring(0, 30) + "...";
     }
     return content;
 }
 
+function cutContent2(content) {
+
+    if (content.split("").length > 10) {
+        return content.substring(0, 10) + "...";
+    }
+    return content; 
+}
 
 function addPost(e) {
 
