@@ -178,12 +178,12 @@ $(function(){
 
 // Get rated star
 
-function getRatedStar(e) {
+function getRatedStar(event) {
 
 
-    // let ratedStar = [];
+  console.log(event);
 
-  switch (e) {
+  switch (event) {
     case document.getElementById("star-5").value:
         let ratingStar5 = document.getElementById("star-5").value;
         localStorage.setItem('ratedStar', ratingStar5);
@@ -211,6 +211,9 @@ function getRatedStar(e) {
       break;
 
   }
+
+
+  // let ratedStar = [];
 
   // let ratingStar5 = document.getElementById("star-5").value;
   // let ratingStar4 = document.getElementById("star-4").value;
