@@ -21,7 +21,6 @@ document.getElementById('hieunang').innerHTML = post.hieunang;
 document.getElementById('thoiluongpin').innerHTML = post.thoiluongpin;
 document.getElementById('video').innerHTML = post.video;
 document.getElementById('loiket').innerHTML = post.loiket;
-// document.getElementById('author').innerHTML = post.author;
 document.getElementById('imageURLContent').innerHTML = ` 
 <div>
     <img src="${post.imageURLContent}" width="100%"/>
