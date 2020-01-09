@@ -167,7 +167,24 @@ function bindCmt(){
 
   cmtListElement.empty();
   $.each(cmtList, function(i, k){
-    cmtListElement.append( $('<p><span>'+ k.name +'</span>'+ k.text +'</p>') );
+    cmtListElement.append( $('<p><span>'+ k.name +'</span>' + ":" + "    " + k.text +'</p>') );
+
+  // document.getElementById("list-comment").innerHTML =
+  // `
+  //   <tr>
+  //   <td>${k.name}</td> 
+  //   <td>${k.text}</td>
+  //   </tr>`;
+
+  // document.getElementById("list-comment").innerHTML =cmtListElement.append( $(
+  //   `<tr>
+  //   <td>${k.name}</td> 
+  //   </tr>`));
+
+  //   document.getElementById("list-comment").innerHTML =cmtListElement.append( $(
+  //     `<tr>
+  //     <td>${k.text}</td>
+  //     </tr>`));
   });
 }
 

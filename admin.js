@@ -50,7 +50,7 @@ post1.imageURLContent4 = "https://cdn.tgdd.vn/Files/2019/03/08/1153563/6_800x450
 post1.thoiluongpin = "Điện thoại được trang bị pin dung lượng 3.100 mAh, khá lớn khi so với kích thước nhỏ gọn của Galaxy S10e. Máy có thể sẽ bị nóng khi thực hiện nhiều tác vụ cùng lúc.";
 post1.imageURLthoiluongpin = "https://cdn.tgdd.vn/Files/2019/03/08/1153563/7_800x450.jpg";
 post1.imageURLContent5 = "https://cdn.tgdd.vn/Files/2019/03/08/1153563/3_800x450.jpg";
-post1.video = "<iframe width='560' height='315' src='https://www.youtube.com/embed/NAa9J7hexo0' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";
+post1.video = `<iframe width='560' height='315' src='https://www.youtube.com/embed/NAa9J7hexo0' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>`;
 post1.loiket = "Samsung Galaxy S10e không chỉ là flagship giá rẻ mà điện thoại còn phù hợp với nhu cầu của những đối tượng người dùng khác nhau. Mặc dù Galaxy S10e đang được so sánh rất nhiều với iPhone XR nhưng sự thực thì tiềm năng của điện thoại còn lớn hơn vậy.";
 post1.author = "HDH TEAM";
 posts.push(post1);
@@ -75,7 +75,7 @@ post2.imageURLContent4 = "https://cellphones.com.vn/sforum/wp-content/uploads/20
 post2.thoiluongpin = "Thời lượng pin của iPhone XR tốt hơn iPhone X kha khá. Trong trường hợp sử dụng của mình với cường độ sử dụng như nhau, thì từ sáng đến tối đi làm về X còn khoảng 20% và XR còn khoảng 40%. Chi tiết onscreen như thế nào thì các bạn đón xem bài đánh giá pin của Tinh Tế nhé.";
 post2.imageURLthoiluongpin = "https://photo2.tinhte.vn/data/attachment-files/2018/11/4484306_Cover.jpg";
 post2.imageURLContent5 = "https://photo2.tinhte.vn/data/attachment-files/2019/07/4706177_646480B0-3BC4-4EAC-87C9-FCDD4C6D908D.jpeg";
-post2.video = "<iframe width='560' height='315' src='https://www.youtube.com/embed/RMWGJgFCqK0' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";
+post2.video = `<iframe width='560' height='315' src='https://www.youtube.com/embed/RMWGJgFCqK0' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>`;
 post2.loiket = "iPhone XR sẽ được Apple phân phối chính hãng tại thị trường Việt Nam kể từ ngày 2/11 tới đây với đầy đủ các tùy chọn màu sắc bao gồm cả phiên bản màu đặc biệt Product RED. Mức giá cụ thể cho phiên bản mã VN/A sẽ là 22.990.000 đồng. Người dùng ngay bây giờ đã có thể đặt trước máy tại CellphoneS để nhận được các phần quà hấp dẫn như đế sạc không dây Anker 10W, gói bảo hành 2 năm và cơ hội trả góp lãi suất 0%. Chi tiết về sản phẩm iPhone XR bạn đọc có thể truy cập tại đường dẫn dưới đây.";
 post2.author = "HDH TEAM";
 posts.push(post2);
@@ -196,7 +196,7 @@ function displayListPost(listPost) {
                 <td>${cutContent(post.thoiluongpin)}</td>
                 <td>${cutContent2(post.imageURLthoiluongpin)}</td>
                 <td>${cutContent2(post.imageURLContent5)}</td>
-                <td>${cutContent2(post.video)}</td>
+                <td>${post.video}</td>
                 <td>${cutContent(post.loiket)}</td>
                 <td>${post.author}</td>
                 <td>${ratedStar}</td>

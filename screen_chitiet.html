@@ -47,17 +47,17 @@
       </div>
 
       <div class="col-2 my-1 text-right">
-          <div class="input-group" >
-              <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Search" >
-              <button class="btn btn-success" onclick="searchPhone(event);"
-                  style="border-bottom-right-radius: 5px; border-top-right-radius: 5px;">
-                  <i class="fa fa-search">
+        <div class="input-group">
+          <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Search">
+          <button class="btn btn-success" onclick="searchPhone(event);"
+            style="border-bottom-right-radius: 5px; border-top-right-radius: 5px;">
+            <i class="fa fa-search">
 
-                  </i>
-              </button>
-          </div>
+            </i>
+          </button>
+        </div>
       </div>
-      
+
     </div>
     <div class="container">
       <div class="row">
@@ -184,15 +184,36 @@
 
 
         <div id="dtext">
-          <h4>Bình luận của bạn</h4>
+          <h5>Bình luận của bạn</h5>
           <input id="namebox" type="text" maxlength="32" size="50" placeholder="Name" />
           <br />
-          <textarea id="txt1" class="textbox" cols="60" rows="5" size="50" placeholder="Your comment"></textarea>
+          <textarea id="txt1" class="textbox" cols="84" rows="5" size="200" placeholder="Your comment"></textarea>
         </div>
         <button class="navbutton" onClick="clearComment()">Clear</button>
         <button class="navbutton" onClick="saveComment()">Save</button>
-        <h4>Bình luận bài viết</h4>
-        <div id="cmtlist"></div>
+
+        <br />
+        <br />
+
+        <h5>Bình luận bài viết</h5>
+
+        <!-- <table class="table table-bordered">
+            <thead class="thead-dark">
+                <tr>
+            <tr>
+              <th>Name</th>
+              <th>Comment</th>
+            </tr>
+          </thead>
+          <tbody id="list-comment">
+
+          </tbody>
+        </table> -->
+
+        <div id="cmtlist">
+
+
+        </div>
 
       </div>
 
@@ -203,11 +224,11 @@
             <span>Bài viết mới nhất</span>
           </h2>
           <div id="menu-right-top">
-              <ul>
-                  <li>
+            <ul>
+              <li>
 
-                  </li>
-              </ul>
+              </li>
+            </ul>
           </div>
         </div>
         <div class="menu-right" id="relative">
