@@ -24,6 +24,7 @@ function reviewPost() {
         'video': '',
         'loiket': '',
         'author': '',
+        'ratingStar': '',
     }
 };
 
@@ -81,6 +82,10 @@ post2.loiket = "iPhone XR sẽ được Apple phân phối chính hãng tại th
 post2.author = "HDH TEAM";
 posts.push(post2);
 
+// Get rated star
+
+let ratedStar = localStorage.getItem('ratedStar');
+
 
 function displayListPost(listPost) {
 
@@ -123,6 +128,7 @@ function displayListPost(listPost) {
                 <td>${cutContent2(post.video)}</td>
                 <td>${cutContent(post.loiket)}</td>
                 <td>${post.author}</td>
+                <td>${ratedStar}</td>
                
             </tr>`;
 

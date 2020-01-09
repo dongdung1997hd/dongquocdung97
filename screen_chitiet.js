@@ -15,13 +15,13 @@ for (let i = 0; i < listPost.length; i++) {
 
 document.getElementById('title').innerHTML = post.title;
 document.getElementById('content').innerHTML = post.content;
-document.getElementById('date').innerHTML = `By Admin - ${post.date}`;
+document.getElementById('date').innerHTML = `By ${post.author} - ${post.date}`;
 document.getElementById('thietke').innerHTML = post.thietke;
 document.getElementById('hieunang').innerHTML = post.hieunang;
 document.getElementById('thoiluongpin').innerHTML = post.thoiluongpin;
 document.getElementById('video').innerHTML = post.video;
 document.getElementById('loiket').innerHTML = post.loiket;
-document.getElementById('author').innerHTML = post.author;
+// document.getElementById('author').innerHTML = post.author;
 document.getElementById('imageURLContent').innerHTML = ` 
 <div>
     <img src="${post.imageURLContent}" width="100%"/>
@@ -176,7 +176,67 @@ $(function(){
   bindCmt();
 });
 
+// Get rated star
 
+function getRatedStar(click) {
+
+
+    // let ratedStar = [];
+
+  switch (click) {
+    case document.getElementById("star-5").value:
+        let ratingStar5 = document.getElementById("star-5").value;
+        localStorage.setItem('ratedStar', ratingStar5);
+
+        alert(ratingStar5);
+        
+      break;
+    case document.getElementById("star-4").value:
+        let ratingStar4 = document.getElementById("star-4").value;
+        localStorage.setItem('ratedStar', ratingStar4);
+
+      break;
+    case document.getElementById("star-3").value:
+        let ratingStar3 = document.getElementById("star-3").value;
+        localStorage.setItem('ratedStar', ratingStar3);
+
+
+      break;
+    case document.getElementById("star-2").value:
+        let ratingStar2 = document.getElementById("star-2").value;
+        localStorage.setItem('ratedStar', ratingStar2);
+
+
+      break;
+    case document.getElementById("star-1").value:
+        let ratingStar1 = document.getElementById("star-1").value;
+        localStorage.setItem('ratedStar', ratingStar1);
+
+      break;
+
+  }
+
+  // let ratingStar5 = document.getElementById("star-5").value;
+  // let ratingStar4 = document.getElementById("star-4").value;
+  // let ratingStar3 = document.getElementById("star-3").value;
+  // let ratingStar2 = document.getElementById("star-2").value;
+  // let ratingStar1 = document.getElementById("star-1").value;
+
+
+  // ratedStar.push(ratingStar1);
+  // ratedStar.push(ratingStar2);
+  // ratedStar.push(ratingStar3);
+  // ratedStar.push(ratingStar4);
+  // ratedStar.push(ratingStar5);
+ 
+  // localStorage.setItem('ratedStar', ratingStar5);
+  // localStorage.setItem('ratedStar', ratingStar4);
+  // localStorage.setItem('ratedStar', ratingStar3);
+  // localStorage.setItem('ratedStar', ratingStar2);
+  // localStorage.setItem('ratedStar', ratingStar1);
+
+  // console.log(ratedStar);
+}
 
 
 
