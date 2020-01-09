@@ -121,14 +121,10 @@ function searchPhone(e) {
           s3.push(element);
       } 
   }
-      
-
-  if (s3.length > 0) {
-          
+                
       localStorage.setItem('searchList', JSON.stringify(s3));
   
       window.location.href = "search_result.html";
-  }
 
 }
 

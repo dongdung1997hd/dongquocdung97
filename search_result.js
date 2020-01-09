@@ -5,6 +5,7 @@ let searchKey = localStorage.getItem("searchKey");
 
 let listPost = JSON.parse(localStorage.getItem("listPost"));
 
+if (searchList.length > 0) {
 
 let s1 = `<h3>Kết quả tìm kiếm cho "${searchKey}"</h3>`;
 
@@ -30,6 +31,11 @@ for (let i = 0; i < searchList.length; i++) {
 }
 
 document.getElementById('left').innerHTML = s;
+} else {
+    let s1Zero = `<h3>Không tìm thấy kết quả cho "${searchKey}"</h3>`;
+
+    document.getElementById('left-top').innerHTML = s1Zero;
+}
 
 
 function goToPostDetail(title) {
@@ -82,13 +88,9 @@ function searchPhone(e) {
             s3.push(element);
         } 
     }
-        
-
-    if (s3.length > 0) {
-            
+                    
         localStorage.setItem('searchList', JSON.stringify(s3));
     
         window.location.href = "search_result.html";
-    }
 
 }
