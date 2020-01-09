@@ -50,7 +50,7 @@ post1.imageURLContent4 = "https://cdn.tgdd.vn/Files/2019/03/08/1153563/6_800x450
 post1.thoiluongpin = "Điện thoại được trang bị pin dung lượng 3.100 mAh, khá lớn khi so với kích thước nhỏ gọn của Galaxy S10e. Máy có thể sẽ bị nóng khi thực hiện nhiều tác vụ cùng lúc.";
 post1.imageURLthoiluongpin = "https://cdn.tgdd.vn/Files/2019/03/08/1153563/7_800x450.jpg";
 post1.imageURLContent5 = "https://cdn.tgdd.vn/Files/2019/03/08/1153563/3_800x450.jpg";
-post1.video = "https://www.youtube.com/watch?v=NAa9J7hexo0&t=2m57s";
+post1.video = "<iframe width='560' height='315' src='https://www.youtube.com/embed/NAa9J7hexo0' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";
 post1.loiket = "Samsung Galaxy S10e không chỉ là flagship giá rẻ mà điện thoại còn phù hợp với nhu cầu của những đối tượng người dùng khác nhau. Mặc dù Galaxy S10e đang được so sánh rất nhiều với iPhone XR nhưng sự thực thì tiềm năng của điện thoại còn lớn hơn vậy.";
 post1.author = "HDH TEAM";
 posts.push(post1);
@@ -77,14 +77,88 @@ post2.imageURLContent4 = "https://cellphones.com.vn/sforum/wp-content/uploads/20
 post2.thoiluongpin = "Thời lượng pin của iPhone XR tốt hơn iPhone X kha khá. Trong trường hợp sử dụng của mình với cường độ sử dụng như nhau, thì từ sáng đến tối đi làm về X còn khoảng 20% và XR còn khoảng 40%. Chi tiết onscreen như thế nào thì các bạn đón xem bài đánh giá pin của Tinh Tế nhé.";
 post2.imageURLthoiluongpin = "https://photo2.tinhte.vn/data/attachment-files/2018/11/4484306_Cover.jpg";
 post2.imageURLContent5 = "https://photo2.tinhte.vn/data/attachment-files/2019/07/4706177_646480B0-3BC4-4EAC-87C9-FCDD4C6D908D.jpeg";
-post2.video = "https://www.youtube.com/watch?v=RMWGJgFCqK0";
+post2.video = "<iframe width='560' height='315' src='https://www.youtube.com/embed/RMWGJgFCqK0' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";
 post2.loiket = "iPhone XR sẽ được Apple phân phối chính hãng tại thị trường Việt Nam kể từ ngày 2/11 tới đây với đầy đủ các tùy chọn màu sắc bao gồm cả phiên bản màu đặc biệt Product RED. Mức giá cụ thể cho phiên bản mã VN/A sẽ là 22.990.000 đồng. Người dùng ngay bây giờ đã có thể đặt trước máy tại CellphoneS để nhận được các phần quà hấp dẫn như đế sạc không dây Anker 10W, gói bảo hành 2 năm và cơ hội trả góp lãi suất 0%. Chi tiết về sản phẩm iPhone XR bạn đọc có thể truy cập tại đường dẫn dưới đây.";
 post2.author = "HDH TEAM";
 posts.push(post2);
 
+<<<<<<< HEAD
 // Get rated star
 
 let ratedStar = localStorage.getItem('ratedStar');
+=======
+let post3 = reviewPost();
+post3.title = "Trên tay Sony Xperia 1: vẫn đầy chất riêng và khác biệt";
+post3.headline = "Xperia 1 ra đời cho thấy Sony đã tìm đúng hướng đi mà họ muốn nhắm tới nhiều năm trước. Khi cầm trên tay Xperia 1, Sony vẫn cho thấy sản phẩm họ khác biệt so với phần còn lại của thế giới Android. Và nếu là một fan Sony thì chắc sản phẩm này sẽ giúp nhiều anh em thoả mãn và hạnh phúc hơn.";
+post3.content = "Chiếc flagship mới của Sony đem đến sự khác biệt ngay khi nhìn vào đó là tỉ lệ màn hình 21:9. Giá trị của Sony cũng thể hiện ở bộ sưu tập vỏ màu pha trộn đặc sắc, cũng như mức độ hoàn thiện sản phẩm rất tốt, cảm giác cầm rất tự tin.";
+post3.imageURLHeadline = "https://cdn.tgdd.vn/Files/2019/06/10/1172282/bomay_800x599.jpg";
+post3.imageURLContent = "http://sonycenter.sony.com.vn/Data/Sites/1/Product/980/h2.jpg";
+post3.code = "P3";
+post3.cauhinh = "Về cấu hình phần cứng, Sony trang bị cho Xperia 1 nền tảng Snapdragon 855 dễ dàng đáp ứng nhu cầu sử dụng trong năm nay và một vài năm sắp tới. Sony cũng trang bị cho máy kết nối mạng 5G tốc độ cao. Rõ ràng là phần cứng cốt lỗi và kết nối mạng sẽ không bị lạc hậu.";
+post3.imageURLcauhinh = "https://cdn.tgdd.vn/Products/Images/42/195747/sony-xperia-17.jpg";
+post3.imageURLContent2 = "https://cdn.fptshop.com.vn/Uploads/Originals/2019/9/3/637031227780007729_sony-xperia-1-4.png";
+post3.thietke = "Máy sở hữu một màn hình OLED 4K 6,5” rất ấn tượng, vì thế công nghệ trên Xperia 1 cũng không còn nằm dưới bất kỳ chiếc điện thoại nào cùng phân khúc khác. Về màu sắc, màn hình cũng đáp ứng tiêu chuẩn hiển thị HDR 10-bit nhờ vi xử lý X1 for mobile giống trên TV BRAVIA. Tỉ lệ 21:9 trên Xperia 1 không đơn thuần là trải nghiệm việc xem phim. Đối với mình tỉ lệ này giúp cho máy có hình dáng khác biệt hơn.";
+post3.imageURLthietke = "https://cdn.tgdd.vn/Products/Images/42/195747/sony-xperia-1-400x460.png";
+post3.imageURLContent3 = "https://vnreview.vn/image/19/11/58/1911581.jpg";
+post3.hieunang ="Camera cũng được Sony đầu tư đầy đủ từ tiêu cự siêu rộng cho đến tiêu chuẩn hay tele, với 3 cảm biến đều có độ phân giải 12 MP. Sony không còn chạy theo độ phân giải khủng như những năm trước dù họ đang bán cảm biến lên đến 48 MP cho các thương hiệu điện thoại khác";
+post3.imageURLhieunang = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAiHT5rpm4ETCJ8EFKUN3GXURYpPmfWgHCdVxxdYPFaWM5sU1z&s";
+post3.imageURLContent4 ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWJaRrMdgSmFJI8KYZe_yGpF-jZNOrWv75Oj1MjinYhiG05UmU&s";
+post3.thoiluongpin = "Cảm giác khi mình cầm thao tác trên chiếc máy này vẫn rất gọn với tay. Nó có phần nào đó gọn về chiều rộng hơn so với một số smartphone có màn hình tương tự khác.";
+post3.imageURLthoiluongpin = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPij8i3aheQBxG9P9HSRsyYVusN3whmHy0FedMhusQZyWNBAPU&s";
+post3.imageURLContent5 = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp8v0PF3eSSlNEAXvuXPK8a_joFaAv7auJh49kwTqL_uUYFA8A&s";
+post3.video = "<iframe width='560' height='315' src='https://www.youtube.com/embed/bqO08V4VDDM' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";
+post3.loiket ="Có thể thấy, anh em fan Sony sẽ có được nhiều lợi ích nhất từ chiếc Xperia 1. Anh em có thể sở hữu nó để cảm thấy sự khác biệt và vượt trội hơn so với những chiếc điện thoại cùng phân khúc khác.";
+post3.author = "HDH TEAM";
+posts.push(post3);
+
+let post4 = reviewPost();
+post4.title = "Trên tay và đánh giá nhanh Huawei P30: Ngoài camera ngon rồi còn gì nữa?";
+post4.headline = "Mặc dù Huawei P30 Pro là ngôi sao chính của đêm nay, nhưng với thiết kế giữ nguyên, giá bán thấp hơn và cấu hình ấn tượng của Huawei P30 cũng đủ làm nhiều bạn phải trầm trồ.";
+post4.content = "Còn chần chờ gì nữa, ngay bây giờ cùng mình đánh giá nhanh thiết bị này nhé.";
+post4.imageURLHeadline ="https://cdn.tgdd.vn/Products/Images/42/197228/huawei-p30-pro-1-600x600.jpg";
+post4.imageURLContent = "https://cdn.fptshop.com.vn/Uploads/Originals/2019/3/27/636893071116127819_huawei-p30-den-1.png";
+post4.code = "P4";
+post4.cauhinh = "Thay vì sử dụng màn hình “tai thỏ” như năm ngoái, năm nay Huawei P30 được nâng cấp lên màn hình “giọt sương” và phần khuyết chỉ có một cái camera selfie vì vậy máy sẽ được nhiều diện tích hiển thị hơn. Đặc biệt, P30 sở hữu cảm biến vân tay dưới màn hình đây là cảm biến vân tay quang học khá nhạy.";
+post4.imageURLcauhinh = "https://hoanghamobile.com/Uploads/Originals/2019/04/22/201904221109342320_P30-Pro-2.png;width=820;height=550;watermark=logo;crop=auto;format=jpg";
+post4.imageURLContent2 = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0_Kt-kjIZJUpqlzPmpn6kxvHgywBh4AVuRCsEdvTEEwavWS7P&s";
+post4.thietke = "Huawei P30 được trang bị màn hình 6.1 inch Full HD+ OLED, có tỷ lệ 19.5:9 và có viền màn hình siêu mỏng. Nhờ viền mỏng này, thiết bị có kích thước khá nhỏ so với iPhone Xr. ";
+post4.imageURLthietke = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9Prm56aumqN-tUzrzm0lSq_hb6w3pQelobv768KpJyu7I7cmn&s";
+post4.imageURLContent3 = "https://abbelectronics.us/EbayTemplate2018/img/debb9bf225a613d01090aa9d8bb058f3.jpg";
+post4.hieunang = "Sức mạnh phần cứng trên Huawei P30 được cung cấp bởi vi xử lý Kirin 980 đi kèm với các tùy chọn 6 GB RAM / 128 GB ROM, 8 GB RAM / 64 GB ROM, 8 GB RAM / 128 GB ROM và 8 GB RAM / 256 GB ROM (hỗ trợ thẻ nhớ mở rộng)";
+post4.imageURLhieunang = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Q1ESjqK1Gw1U0WT64sMvsBNjboe9LE8nT0b7hduJHmUqXfD8&s";
+post4.imageURLContent4 = "https://i.ebayimg.com/images/g/B1EAAOSwTHlcmy1A/s-l300.jpg";
+post4.thoiluongpin = "Máy sẽ chạy Android 9 Pie với EMUI 9.1 và xuất xưởng cùng viên pin dung lượng ổn 3.650 mAh cùng khả năng sạc nhanh.";
+post4.imageURLthoiluongpin = "https://images-na.ssl-images-amazon.com/images/I/51JtGY2yooL._SX569_.jpg";
+post4.imageURLContent5 = "https://i.ebayimg.com/images/g/B1EAAOSwTHlcmy1A/s-l300.jpg";
+post4.video = "<iframe width='560' height='315' src='https://www.youtube.com/embed/fIr0E3cRNo8' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";
+post4.loiket = "Huawei P30 khi bán ra sẽ có những màu sắc như Amber Sunrise, Breat Breath Crystal, Pearl White, Aurora và Black có hiệu ứng đổi màu khá đẹp mắt khi nghiêng ở các góc nhìn khác nhau.";
+post4.author = "HDH TEAM";
+posts.push(post4);
+
+let post5 = reviewPost();
+post5.title = "Smartphone cao cấp nhất của VinSmart lộ diện: Camera 48 vân tay dưới màn hình";
+post5.headline = "Dù chưa được công bố chính thức, song thông tin về thế hệ smartphone cao cấp nhất trong số 4 chiếc máy mà Vingroup sẽ giới thiệu trong thời gian sắp tới đã được các đại lý bán lẻ  để lộ.";
+post5.content = "Mới đây, trang mua sắm thương mại điện tử của Vingroup là Adayroi vừa mới công bố sản phẩm mới của mình là chiếc Vsmart Live.";
+post5.imageURLHeadline = "https://icdn.dantri.com.vn/thumb_w/640/2019/08/06/vsmart-live-1565055954929.png";
+post5.imageURLContent = "https://cdn.vietnammoi.vn/stores/news_dataimages/hangnt/122018/14/22/2947_2.Vsmart_Active1_13_2.jpg";
+post5.code = "P5"
+post5.cauhinh = "Cùng với đó, Vsmart Live sẽ có mặt lưng có màu gradient bắt mắt, với điểm nhấn là cụm 3 camera thời thượng, với độ phân giải lên tới 48  gồm cảm biến chính, cảm biến góc rộng.";
+post5.imageURLcauhinh = "https://vcdn-sohoa.vnecdn.net/2018/12/13/a11-4977-1544696676.jpg";
+post5.imageURLContent2 = "http://congly.vn/data/news/2018/12/13/4-dien-thoai-cua-vinsmart-lo-cau-hinh-truoc-ngay-ra-mat.jpg";
+post5.thietke = "Thông qua hình ảnh được hé lộ, có thể thấy rằng máy sử dụng thiết kế tràn viền theo xu hướng của nhiều smartphone cao cấp hiện nay, không điểm khuyết, không tai thỏ hay lỗ đục. Để làm được điều này, cụm camera selfie và loa thoại của máy sẽ được đặt ở cạnh viền rất mỏng bên trên.";
+post5.imageURLthietke = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScsBs3V3KPEfA_pMNvIP0Sa-GP1vzBYNklbWfQHJO48N1xYHI-&s";
+post5.imageURLContent3 = "https://ircdn.vingroup.net/storage/public/2019/07/anh%204%20dt-20190724T015754046767.jpg";
+post5.hieunang = "Mặc dù là sản phẩm cao nhất từ trước tới nay, nhưng Vsmart Live vẫn là một chiếc máy thuộc phân khúc tầm trung, sở hữu nhiều ưu điểm vượt trội như hiệu năng mạnh mẽ, cụm 3 camera hiện đại, vân tay dưới màn hình";
+post5.imageURLhieunang = "https://media.doisongphapluat.com/601/2018/12/14/Vsmart-chinh-thuc-ra-mat-4-smartphone-gia-tu-25-trieu-dong-cau-hinh-cuc-khung-01.jpg";
+post5.imageURLContent4 = "http://nguoivietdunghangviet.vn/upload/hang-viet/vinsmart.jpg";
+post5.thoiluongpin = "Máy sẽ có dung lượng pin là 4,000mAh cùng khả năng sạc nhanh QuickCharge có lẽ là 3.0 tương tự thế hệ trước thông qua cổng kết nối USB-C.";
+post5.imageURLthoiluongpin = "https://cdn.didongthongminh.vn/upload_images/2018/12/dien-thoai-vsmart-2-1.jpg";
+post5.imageURLContent5 = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKBM8wHTIbufRXNnpXFiFBINBKv79yH7jiUwNWULWswZeUNFQ0&s";
+post5.video = "<iframe width='560' height='315' src='https://www.youtube.com/embed/BS2nehXhP_E' frameborder='0' allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";
+post5.loiket = "Hiện tại, dự kiến rằng Vsmart Live sẽ được giới thiệu vào đầu tháng 8 này và theo như các trang thương mại điện tử lớn tại Việt Nam, máy sẽ được bán ra trong khoảng từ ngày 9-10";
+post5.author = "HDH TEAM";
+posts.push(post5);
+>>>>>>> 19cae35749f6db81b8720dd6bf0dd8b673a16d63
 
 
 function displayListPost(listPost) {
