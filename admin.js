@@ -50,7 +50,7 @@ post1.imageURLContent4 = "https://cdn.tgdd.vn/Files/2019/03/08/1153563/6_800x450
 post1.thoiluongpin = "Điện thoại được trang bị pin dung lượng 3.100 mAh, khá lớn khi so với kích thước nhỏ gọn của Galaxy S10e. Máy có thể sẽ bị nóng khi thực hiện nhiều tác vụ cùng lúc.";
 post1.imageURLthoiluongpin = "https://cdn.tgdd.vn/Files/2019/03/08/1153563/7_800x450.jpg";
 post1.imageURLContent5 = "https://cdn.tgdd.vn/Files/2019/03/08/1153563/3_800x450.jpg";
-post1.video = "<iframe width='560' height='315' src='https://www.youtube.com/embed/NAa9J7hexo0' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";
+post1.video = "https://www.youtube.com/watch?v=NAa9J7hexo0&t=2m57s";
 post1.loiket = "Samsung Galaxy S10e không chỉ là flagship giá rẻ mà điện thoại còn phù hợp với nhu cầu của những đối tượng người dùng khác nhau. Mặc dù Galaxy S10e đang được so sánh rất nhiều với iPhone XR nhưng sự thực thì tiềm năng của điện thoại còn lớn hơn vậy.";
 post1.author = "HDH TEAM";
 posts.push(post1);
@@ -65,8 +65,6 @@ post2.imageURLContent = "https://vcdn-sohoa.vnecdn.net/2018/11/22/iphone-xr-1394
 post2.code = "P2";
 post2.cauhinh = "Nhìn chung, iPhone XR sẽ là một trong những sản phẩm xứng đáng trong phân khúc giá 23 triệu đồng. Với mức giá 23 triệu đồng, chúng ta sẽ có những gì? Một thiết kế đẹp không kém cạnh gì so với iPhone Xs, một cấu hình mạnh mẽ nhất với con chip A12 7nm mới đảm bảo cho tất cả các thiết bị Android khác “hít khói”, một thời lượng sử dụng pin ấn tượng hơn cả iPhone Xs Max hay là một camera tốt vẫn có khả năng chụp xóa phông mặc dù chỉ là camera đơn… iPhone XR sẽ là một chiếc smartphone đáng để nâng cấp cho những người dùng hiện tại đang sở hữu iPhone 7/8 Plus hay các thiết bị iPhone cũ khác, còn với người dùng iPhone X, nếu bạn không cần một hiệu năng tốt hơn thì iPhone XR có lẽ không hẳn là một lựa chọn hợp l";
 post2.imageURLcauhinh = "https://cellphones.com.vn/sforum/wp-content/uploads/2018/10/IMG_3705-960x640.jpg";
-
-
 post2.imageURLContent2 = "https://cellphones.com.vn/sforum/wp-content/uploads/2018/10/IMG_3753-960x640.jpg";
 post2.thietke = "Điểm khác biệt là Apple không dùng chất liệu thép không gỉ cho bộ khung viền của iPhone XR, mà chỉ sử dụng chất liệu nhôm Series 7000 giống với thế hệ iPhone 8 hay iPhone 8 Plus. Tuy vậy thì điều này không ảnh hưởng quá nhiều tới độ bền của máy.";
 post2.imageURLthietke = "https://cellphones.com.vn/sforum/wp-content/uploads/2018/10/IMG_3642.jpg";
@@ -77,16 +75,11 @@ post2.imageURLContent4 = "https://cellphones.com.vn/sforum/wp-content/uploads/20
 post2.thoiluongpin = "Thời lượng pin của iPhone XR tốt hơn iPhone X kha khá. Trong trường hợp sử dụng của mình với cường độ sử dụng như nhau, thì từ sáng đến tối đi làm về X còn khoảng 20% và XR còn khoảng 40%. Chi tiết onscreen như thế nào thì các bạn đón xem bài đánh giá pin của Tinh Tế nhé.";
 post2.imageURLthoiluongpin = "https://photo2.tinhte.vn/data/attachment-files/2018/11/4484306_Cover.jpg";
 post2.imageURLContent5 = "https://photo2.tinhte.vn/data/attachment-files/2019/07/4706177_646480B0-3BC4-4EAC-87C9-FCDD4C6D908D.jpeg";
-post2.video = "<iframe width='560' height='315' src='https://www.youtube.com/embed/RMWGJgFCqK0' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";
+post2.video = "https://www.youtube.com/watch?v=RMWGJgFCqK0&t=5s";
 post2.loiket = "iPhone XR sẽ được Apple phân phối chính hãng tại thị trường Việt Nam kể từ ngày 2/11 tới đây với đầy đủ các tùy chọn màu sắc bao gồm cả phiên bản màu đặc biệt Product RED. Mức giá cụ thể cho phiên bản mã VN/A sẽ là 22.990.000 đồng. Người dùng ngay bây giờ đã có thể đặt trước máy tại CellphoneS để nhận được các phần quà hấp dẫn như đế sạc không dây Anker 10W, gói bảo hành 2 năm và cơ hội trả góp lãi suất 0%. Chi tiết về sản phẩm iPhone XR bạn đọc có thể truy cập tại đường dẫn dưới đây.";
 post2.author = "HDH TEAM";
 posts.push(post2);
 
-<<<<<<< HEAD
-// Get rated star
-
-let ratedStar = localStorage.getItem('ratedStar');
-=======
 let post3 = reviewPost();
 post3.title = "Trên tay Sony Xperia 1: vẫn đầy chất riêng và khác biệt";
 post3.headline = "Xperia 1 ra đời cho thấy Sony đã tìm đúng hướng đi mà họ muốn nhắm tới nhiều năm trước. Khi cầm trên tay Xperia 1, Sony vẫn cho thấy sản phẩm họ khác biệt so với phần còn lại của thế giới Android. Và nếu là một fan Sony thì chắc sản phẩm này sẽ giúp nhiều anh em thoả mãn và hạnh phúc hơn.";
@@ -106,7 +99,7 @@ post3.imageURLContent4 ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR
 post3.thoiluongpin = "Cảm giác khi mình cầm thao tác trên chiếc máy này vẫn rất gọn với tay. Nó có phần nào đó gọn về chiều rộng hơn so với một số smartphone có màn hình tương tự khác.";
 post3.imageURLthoiluongpin = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPij8i3aheQBxG9P9HSRsyYVusN3whmHy0FedMhusQZyWNBAPU&s";
 post3.imageURLContent5 = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp8v0PF3eSSlNEAXvuXPK8a_joFaAv7auJh49kwTqL_uUYFA8A&s";
-post3.video = "<iframe width='560' height='315' src='https://www.youtube.com/embed/bqO08V4VDDM' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";
+post3.video = "https://www.youtube.com/watch?v=bqO08V4VDDM";
 post3.loiket ="Có thể thấy, anh em fan Sony sẽ có được nhiều lợi ích nhất từ chiếc Xperia 1. Anh em có thể sở hữu nó để cảm thấy sự khác biệt và vượt trội hơn so với những chiếc điện thoại cùng phân khúc khác.";
 post3.author = "HDH TEAM";
 posts.push(post3);
@@ -130,7 +123,7 @@ post4.imageURLContent4 = "https://i.ebayimg.com/images/g/B1EAAOSwTHlcmy1A/s-l300
 post4.thoiluongpin = "Máy sẽ chạy Android 9 Pie với EMUI 9.1 và xuất xưởng cùng viên pin dung lượng ổn 3.650 mAh cùng khả năng sạc nhanh.";
 post4.imageURLthoiluongpin = "https://images-na.ssl-images-amazon.com/images/I/51JtGY2yooL._SX569_.jpg";
 post4.imageURLContent5 = "https://i.ebayimg.com/images/g/B1EAAOSwTHlcmy1A/s-l300.jpg";
-post4.video = "<iframe width='560' height='315' src='https://www.youtube.com/embed/fIr0E3cRNo8' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";
+post4.video = "https://www.youtube.com/watch?v=fIr0E3cRNo8";
 post4.loiket = "Huawei P30 khi bán ra sẽ có những màu sắc như Amber Sunrise, Breat Breath Crystal, Pearl White, Aurora và Black có hiệu ứng đổi màu khá đẹp mắt khi nghiêng ở các góc nhìn khác nhau.";
 post4.author = "HDH TEAM";
 posts.push(post4);
@@ -154,11 +147,15 @@ post5.imageURLContent4 = "http://nguoivietdunghangviet.vn/upload/hang-viet/vinsm
 post5.thoiluongpin = "Máy sẽ có dung lượng pin là 4,000mAh cùng khả năng sạc nhanh QuickCharge có lẽ là 3.0 tương tự thế hệ trước thông qua cổng kết nối USB-C.";
 post5.imageURLthoiluongpin = "https://cdn.didongthongminh.vn/upload_images/2018/12/dien-thoai-vsmart-2-1.jpg";
 post5.imageURLContent5 = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKBM8wHTIbufRXNnpXFiFBINBKv79yH7jiUwNWULWswZeUNFQ0&s";
-post5.video = "<iframe width='560' height='315' src='https://www.youtube.com/embed/BS2nehXhP_E' frameborder='0' allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";
+post5.video = "https://www.youtube.com/watch?v=BS2nehXhP_E";
 post5.loiket = "Hiện tại, dự kiến rằng Vsmart Live sẽ được giới thiệu vào đầu tháng 8 này và theo như các trang thương mại điện tử lớn tại Việt Nam, máy sẽ được bán ra trong khoảng từ ngày 9-10";
 post5.author = "HDH TEAM";
 posts.push(post5);
->>>>>>> 19cae35749f6db81b8720dd6bf0dd8b673a16d63
+
+
+// Get star rated
+
+let ratedStar = localStorage.getItem('ratedStar');
 
 
 function displayListPost(listPost) {
