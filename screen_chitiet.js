@@ -155,8 +155,8 @@ posts.push(post5);
 
 // Get post content
 
-// let listPost = JSON.parse(localStorage.getItem("listPost"));
-let listPost = posts;
+let listPost = JSON.parse(localStorage.getItem("listPost"));
+// let listPost = posts;
 
 
 let selectedPost = localStorage.getItem("selectedPost");
@@ -164,6 +164,7 @@ let selectedPost = localStorage.getItem("selectedPost");
 let post;
 for (let i = 0; i < listPost.length; i++) {
   const element = listPost[i];
+  
   if (element.title === selectedPost) {
     post = element;
     break;
