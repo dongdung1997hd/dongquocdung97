@@ -101,6 +101,38 @@ for (let i = listPost.length -1 ; i >= 0; i--) {
 
 document.getElementById('menu-right-top').innerHTML = s2;
 
+// Tinh nang tim kiem bai viet
+
+function searchPhone(e) {
+
+  e.preventDefault();
+
+
+  let s3 = [];
+
+  let searchBrand = document.getElementById("inlineFormInputGroupUsername").value;
+
+  localStorage.setItem("searchKey", searchBrand);    
+
+  for (let i = 0; i < listPost.length; i++) {
+      const element = listPost[i];
+      let phoneName = element.title;
+      if (phoneName.toLowerCase().includes(searchBrand.toLowerCase())) {
+          s3.push(element);
+      } 
+  }
+      
+
+  if (s3.length > 0) {
+          
+      localStorage.setItem('searchList', JSON.stringify(s3));
+  
+      window.location.href = "search_result.html";
+  }
+
+}
+
+
 function setObject(key, value) {
   window.localStorage.setItem(key, JSON.stringify(value));
 }
