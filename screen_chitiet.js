@@ -80,11 +80,11 @@ document.getElementById('imageURLthoiluongpin').innerHTML = `
 
 let s2 = '';
 
-for (let i = listPost.length -1 ; i >= 0; i--) {
+for (let i = listPost.length - 1; i >= 0; i--) {
   const element = listPost[i];
 
-  if (i >= listPost.length - 2){
-  s2 += `
+  if (i >= listPost.length - 2) {
+    s2 += `
   
   <ul>
       <li class="product-row">
@@ -96,6 +96,13 @@ for (let i = listPost.length -1 ; i >= 0; i--) {
   
   `;
   }
+}
+
+// Click on title, jump to post detail 
+
+function goToPostDetail(title) {
+    localStorage.setItem("selectedPost", title);
+    window.location.href = "screen_chitiet.html";
 }
 
 document.getElementById('menu-right-top').innerHTML = s2;
@@ -111,19 +118,19 @@ function searchPhone(e) {
 
   let searchBrand = document.getElementById("inlineFormInputGroupUsername").value;
 
-  localStorage.setItem("searchKey", searchBrand);    
+  localStorage.setItem("searchKey", searchBrand);
 
   for (let i = 0; i < listPost.length; i++) {
-      const element = listPost[i];
-      let phoneName = element.title;
-      if (phoneName.toLowerCase().includes(searchBrand.toLowerCase())) {
-          s3.push(element);
-      } 
+    const element = listPost[i];
+    let phoneName = element.title;
+    if (phoneName.toLowerCase().includes(searchBrand.toLowerCase())) {
+      s3.push(element);
+    }
   }
-                
-      localStorage.setItem('searchList', JSON.stringify(s3));
-  
-      window.location.href = "search_result.html";
+
+  localStorage.setItem('searchList', JSON.stringify(s3));
+
+  window.location.href = "search_result.html";
 
 }
 
@@ -131,64 +138,66 @@ function searchPhone(e) {
 function setObject(key, value) {
   window.localStorage.setItem(key, JSON.stringify(value));
 }
+
 function getObject(key) {
   var storage = window.localStorage,
-      value = storage.getItem(key);
+    value = storage.getItem(key);
   return value && JSON.parse(value);
 }
+
 function clearStorage() {
   window.localStorage.clear();
 }
 
-function clearComment(){
+function clearComment() {
   $('#txt1').val('');
   $('#namebox').val('');
   clearStorage();
 }
 
-function saveComment(){
+function saveComment() {
   var cText = $('#txt1').val(),
-      cName = $('#namebox').val(),
-      cmtList = getObject('cmtlist');
+    cName = $('#namebox').val(),
+    cmtList = getObject('cmtlist');
 
-  if (cmtList){
-    cmtList.push({name: cName, text: cText});
+  if (cmtList) {
+    cmtList.push({
+      name: cName,
+      text: cText
+    });
     setObject('cmtlist', cmtList);
-  }else{ 
-    setObject('cmtlist', [{name: cName, text: cText}]);
+  } else {
+    setObject('cmtlist', [{
+      name: cName,
+      text: cText
+    }]);
   }
 
   bindCmt();
 }
 
-function bindCmt(){
+function bindCmt() {
   var cmtListElement = $('#cmtlist'),
-      cmtList = getObject('cmtlist');
+    cmtList = getObject('cmtlist');
 
   cmtListElement.empty();
-  $.each(cmtList, function(i, k){
-    cmtListElement.append( $('<p><span>'+ k.name +'</span>' + ":" + "    " + k.text +'</p>') );
 
-  // document.getElementById("list-comment").innerHTML =
-  // `
-  //   <tr>
-  //   <td>${k.name}</td> 
-  //   <td>${k.text}</td>
-  //   </tr>`;
+  $("#list-comment").empty();
 
-  // document.getElementById("list-comment").innerHTML =cmtListElement.append( $(
-  //   `<tr>
-  //   <td>${k.name}</td> 
-  //   </tr>`));
+  $.each(cmtList, function (i, k) {
+    // cmtListElement.append($('<p><span>' + k.name + '</span>' + ":" + "    " + k.text + '</p>'));
 
-  //   document.getElementById("list-comment").innerHTML =cmtListElement.append( $(
-  //     `<tr>
-  //     <td>${k.text}</td>
-  //     </tr>`));
+    $("#list-comment").append($(
+    `
+      <tr>
+      <td>${k.name}</td> 
+      <td>${k.text}</td>
+      </tr>`));
+
   });
 }
 
-$(function(){
+$(function () {
   bindCmt();
 });
 
@@ -196,63 +205,14 @@ $(function(){
 
 function getRatedStar(event) {
 
-
-  console.log(event);
-
-  switch (event) {
-    case document.getElementById("star-5").value:
-        let ratingStar5 = document.getElementById("star-5").value;
-        localStorage.setItem('ratedStar', ratingStar5);
-        
+  for (let i = 0; i < listPost.length; i++) {
+    const element = listPost[i];
+    if (element.title === selectedPost) {
+      element.ratingStar = event.target.value;
+      localStorage.setItem('listPost', JSON.stringify(listPost));
       break;
-    case document.getElementById("star-4").value:
-        let ratingStar4 = document.getElementById("star-4").value;
-        localStorage.setItem('ratedStar', ratingStar4);
-
-      break;
-    case document.getElementById("star-3").value:
-        let ratingStar3 = document.getElementById("star-3").value;
-        localStorage.setItem('ratedStar', ratingStar3);
-
-      break;
-    case document.getElementById("star-2").value:
-        let ratingStar2 = document.getElementById("star-2").value;
-        localStorage.setItem('ratedStar', ratingStar2);
-
-      break;
-    case document.getElementById("star-1").value:
-        let ratingStar1 = document.getElementById("star-1").value;
-        localStorage.setItem('ratedStar', ratingStar1);
-
-      break;
-
+    }
   }
 
-
-  // let ratedStar = [];
-
-  // let ratingStar5 = document.getElementById("star-5").value;
-  // let ratingStar4 = document.getElementById("star-4").value;
-  // let ratingStar3 = document.getElementById("star-3").value;
-  // let ratingStar2 = document.getElementById("star-2").value;
-  // let ratingStar1 = document.getElementById("star-1").value;
-
-
-  // ratedStar.push(ratingStar1);
-  // ratedStar.push(ratingStar2);
-  // ratedStar.push(ratingStar3);
-  // ratedStar.push(ratingStar4);
-  // ratedStar.push(ratingStar5);
- 
-  // localStorage.setItem('ratedStar', ratingStar5);
-  // localStorage.setItem('ratedStar', ratingStar4);
-  // localStorage.setItem('ratedStar', ratingStar3);
-  // localStorage.setItem('ratedStar', ratingStar2);
-  // localStorage.setItem('ratedStar', ratingStar1);
-
-  // console.log(ratedStar);
 }
-
-
-
 

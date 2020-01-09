@@ -38,7 +38,8 @@ a {
    background: #2e3b43;
    color: #d9dbdc;
    margin: 0px;
-   padding: 0px
+   padding: 0px;
+   margin-top: 100px;
 }
 #main #left ul {
     margin: 0px;
@@ -212,6 +213,7 @@ a {
     position: fixed;
     top: 0;
     width: 300px;
+    margin-bottom: 400px;
 }
 
 .col_footer-clumn {

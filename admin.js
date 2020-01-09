@@ -126,6 +126,7 @@ post4.imageURLContent5 = "https://i.ebayimg.com/images/g/B1EAAOSwTHlcmy1A/s-l300
 post4.video = `<iframe width='560' height='315' src='https://www.youtube.com/embed/fIr0E3cRNo8' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>`;
 post4.loiket = "Huawei P30 khi bán ra sẽ có những màu sắc như Amber Sunrise, Breat Breath Crystal, Pearl White, Aurora và Black có hiệu ứng đổi màu khá đẹp mắt khi nghiêng ở các góc nhìn khác nhau.";
 post4.author = "HDH TEAM";
+
 posts.push(post4);
 
 let post5 = reviewPost();
@@ -153,9 +154,6 @@ post5.author = "HDH TEAM";
 posts.push(post5);
 
 
-// Get star rated
-
-let ratedStar = localStorage.getItem('ratedStar');
 
 
 function displayListPost(listPost) {
@@ -199,7 +197,7 @@ function displayListPost(listPost) {
                 <td>${post.video}</td>
                 <td>${cutContent(post.loiket)}</td>
                 <td>${post.author}</td>
-                <td>${ratedStar}</td>
+                <td>${post.ratingStar}</td>
                
             </tr>`;
 
@@ -369,3 +367,9 @@ let isExist = localStorage.getItem("listPost");
 if (!isExist) {
     localStorage.setItem('listPost', JSON.stringify(posts));
 }
+
+// Display rated Star
+
+let posts2 = JSON.parse(localStorage.getItem("listPost"));
+displayListPost(posts2);
+
