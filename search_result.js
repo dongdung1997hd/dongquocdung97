@@ -1,13 +1,22 @@
-// Get data from local Storage
+
+let searchList = JSON.parse(localStorage.getItem("searchList"));
+
+let searchKey = localStorage.getItem("searchKey");
 
 let listPost = JSON.parse(localStorage.getItem("listPost"));
 
-// Main left
+// Hien thi ket qua tim kiem
+
+if (searchList.length > 0) {
+
+let s1 = `<h3>Kết quả tìm kiếm cho "${searchKey}"</h3>`;
+
+document.getElementById('left-top').innerHTML = s1;
 
 let s = '';
 
-for (let i = 0; i < listPost.length; i++) {
-    const element = listPost[i];
+for (let i = 0; i < searchList.length; i++) {
+    const element = searchList[i];
     s += `
     
     <ul>
@@ -22,9 +31,20 @@ for (let i = 0; i < listPost.length; i++) {
 }
 
 document.getElementById('left').innerHTML = s;
+} else {
+    let s1Zero = `<h3>Không tìm thấy kết quả cho "${searchKey}"</h3>`;
 
-// Bai viet moi nhat o main right top
+    document.getElementById('left-top').innerHTML = s1Zero;
+}
 
+
+function goToPostDetail(title) {
+    localStorage.setItem("selectedPost", title);
+    window.location.href = "screen_chitiet.html";
+}
+
+
+// Bai viet gan day
 
 let s2 = '';
 
@@ -54,7 +74,6 @@ function searchPhone(e) {
 
     e.preventDefault();
 
-
     let s3 = [];
 
     let searchBrand = document.getElementById("inlineFormInputGroupUsername").value;
@@ -68,29 +87,9 @@ function searchPhone(e) {
             s3.push(element);
         } 
     }
-            
+                    
         localStorage.setItem('searchList', JSON.stringify(s3));
     
         window.location.href = "search_result.html";
+
 }
-
-
-// Click on title, jump to post detail 
-
-function goToPostDetail(title) {
-    localStorage.setItem("selectedPost", title);
-    window.location.href = "screen_chitiet.html";
-}
-
-// window.onscroll = function() {myFunction()};
-
-// var relative = document.getElementById("relative");
-// var sticky = relative.offsetTop;
-
-// function myFunction() {
-//   if (window.pageYOffset >= sticky) {
-//     relative.classList.add("sticky")
-//   } else {
-//     relative.classList.remove("sticky");
-//   }
-// }
