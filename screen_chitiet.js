@@ -178,17 +178,15 @@ $(function(){
 
 // Get rated star
 
-function getRatedStar(click) {
+function getRatedStar(e) {
 
 
     // let ratedStar = [];
 
-  switch (click) {
+  switch (e) {
     case document.getElementById("star-5").value:
         let ratingStar5 = document.getElementById("star-5").value;
         localStorage.setItem('ratedStar', ratingStar5);
-
-        alert(ratingStar5);
         
       break;
     case document.getElementById("star-4").value:
@@ -200,12 +198,10 @@ function getRatedStar(click) {
         let ratingStar3 = document.getElementById("star-3").value;
         localStorage.setItem('ratedStar', ratingStar3);
 
-
       break;
     case document.getElementById("star-2").value:
         let ratingStar2 = document.getElementById("star-2").value;
         localStorage.setItem('ratedStar', ratingStar2);
-
 
       break;
     case document.getElementById("star-1").value:
